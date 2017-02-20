@@ -13,7 +13,7 @@ int main(void) {
     puts("How many words do you wish to enter ? ");
     scanf("%d", &num);
     
-    wordsPointer = (char * *) malloc(num * sizeof(char *));
+    wordsPointer = (char * *) malloc(num * sizeof(char *)); // 给指向指针的指针分配动态内存
     
     printf("Enter %d words now:\n", num);
     
