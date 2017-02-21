@@ -30,5 +30,14 @@ int main(void) {
         puts(wordsPointer[i]);
     }
     
+
+
+    for (int i = 0; i < num; ++i)
+    {
+        free(wordsPointer[i]);
+    }
+
+    free(wordsPointer);
+    
     return 0;
 }
